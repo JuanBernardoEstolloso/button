@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centered Button with Message + Redirect</title>
+  <style>
+    /* Center everything vertically */
+    body {
+      display: flex;
+      flex-direction: column;   /* stack items top → bottom */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Heading style */
+    h1 {
+      margin-bottom: 20px;   /* space below heading */
+      color: #333;
+    }
+
+    /* Button style */
+    button {
+      font-size: 20px;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Text above the button -->
+  <h1>CrazyDumpling</h1>
+  <p>its okieee Everythin Happens for a reason</p>
+
+  <!-- The button -->
+  <button onclick="goToMusic()">Miss mo? click here</button>
+
+  <script>
+    function goToMusic() {
+      alert("🎶Mag relapse ka muna:(");
+      window.location.href = "https://www.youtube.com/watch?v=Pb6r6I1dmJA&list=RDjb-U6YSpKuM&index=2&ab_channel=deepbluesounds"; // your link
+    }
+  </script>
+
+</body>
+</html>
