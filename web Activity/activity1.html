@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout - Box Model Challenge</title>
+  <style>
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1e293b;
+    }
+
+    
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* equal spacing between cards */
+      flex-wrap: wrap; /* makes it responsive */
+    }
+
+    
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin: 10px;
+    }
+
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    
+    .card-header {
+      padding: 15px;
+      border-bottom: 1px solid #e5e7eb;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background-color: #f1f5f9;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+   
+    .card-content {
+      padding: 20px;
+      color: #334155;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Card Layout - Box Model Challenge</h1>
+
+  <div class="card-container">
+    
+    <div class="card">
+      <div class="card-header">Card One</div>
+      <div class="card-content">
+        <p>This is the first card. It uses <strong>padding</strong> for spacing and a <strong>shadow</strong> for depth.</p>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-header">Card Two</div>
+      <div class="card-content">
+        <p>The second card also has <strong>rounded corners</strong> and consistent spacing with margin and padding.</p>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-header">Card Three</div>
+      <div class="card-content">
+        <p>The third card demonstrates the <strong>box model</strong> with borders, padding, and margin for layout.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
